@@ -1,0 +1,42 @@
+/*
+Plugin Name: Simple Ticketboard
+Plugin URI: https://dein-blog.de/simple-ticketboard
+Description: Minimalistisches Ticketsystem für WordPress – ideal für Supportanfragen über ein Formular.
+Version: 1.0
+Author: Stefan Draeger
+Author URI: https://ddraeger-it.blog
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: simple-ticketboard
+Domain Path: /languages
+*/
+
+.support-ticket-liste-form label {
+  text-transform: none !important;
+}
+
+/* Basis-Styles für die Ticketliste */
+.support-ticket-liste {
+  list-style: none;
+  padding-left: 0;
+  margin: 1em 0;
+}
+
+.support-ticket-liste li {
+  padding: 4px 0;
+  border-bottom: 1px solid #ddd;
+  font-family: sans-serif;
+}
+
+.support-ticket-liste li.erledigt {
+  color: gray;
+  text-decoration: line-through;
+}
+
+form.ticket-form *,
+form.ticket-form label,
+form.ticket-form input,
+form.ticket-form textarea,
+form.ticket-form select {
+  text-transform: none !important;
+}
